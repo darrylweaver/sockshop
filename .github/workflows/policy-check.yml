@@ -1,0 +1,16 @@
+name: Magalix
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  magalix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Magalix
+        uses: magalixcorp/magalix-action@main
+        with:
+          webhook: https://console.magalix.com/api/v1/kubeguard/5704937a-4734-4420-95c6-3658b01f23fc/2edfabc2-ffe5-4440-a692-47a28b878ac9
