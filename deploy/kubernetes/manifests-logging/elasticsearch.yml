@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -7,7 +6,7 @@ metadata:
     name: elasticsearch
   namespace: kube-system
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       name: elasticsearch
@@ -17,11 +16,11 @@ spec:
         name: elasticsearch
     spec:
       containers:
-       - image: elasticsearch
-         name: elasticsearch
-         ports:
-          - name: elasticsearch
-            containerPort: 9200
+        - image: elasticsearch
+          name: elasticsearch
+          ports:
+            - name: elasticsearch
+              containerPort: 9200
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---
@@ -34,7 +33,8 @@ metadata:
   namespace: kube-system
 spec:
   ports:
-  - port: 9200
-    targetPort: 9200
+    - port: 9200
+      targetPort: 9200
   selector:
     name: elasticsearch
+
