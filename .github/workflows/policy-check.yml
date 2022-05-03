@@ -13,4 +13,4 @@ jobs:
       - name: Magalix
         uses: magalixcorp/magalix-action@main
         with:
-          webhook: https://console.magalix.com/api/v1/kubeguard/5704937a-4734-4420-95c6-3658b01f23fc/2edfabc2-ffe5-4440-a692-47a28b878ac9
+          webhook: https://console.magalix.com/api/v1/kubeguard/5704937a-4734-4420-95c6-3658b01f23fc/3118b620-cccc-4286-8c08-1421f26697f6
