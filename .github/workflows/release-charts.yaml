@@ -28,6 +28,6 @@ jobs:
         uses: stecky/yet-another-chart-releaser-action@v1
         with:
           charts_dir: deploy/kubernetes/charts
-          charts_repo_url: https://raw.githubusercontent.com/darrylweaver/microservices-demo/gh-pages/
+          charts_repo_url: https://raw.githubusercontent.com/darrylweaver/sockshop/gh-pages/
         env:
           YACR_TOKEN: "${{ secrets.HELM_CHART_RELEASE_TOKEN }}"
