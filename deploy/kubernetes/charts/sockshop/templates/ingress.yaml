@@ -16,8 +16,8 @@ spec:
             name: front-end
             port:
               number: 80
-        path: /
-        pathType: Prefix
+        path: /?(.*)
+        pathType: ImplementationSpecific
     {{- if .Values.host }}
     host: {{ .Values.host }}
     {{- end }}
