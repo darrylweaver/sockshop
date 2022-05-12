@@ -2,6 +2,18 @@ apiVersion: v1
 entries:
   sockshop:
   - apiVersion: v1
+    created: "2022-05-12T13:37:25.937109338Z"
+    dependencies:
+    - name: nginx-ingress
+      repository: https://helm.nginx.com/stable
+      version: 0.4.2
+    description: A Helm chart for Sock Shop
+    digest: 248f65a8e037252ea7618c71d53e23b4c0af38a772f0a9ad25c74e1bf9ccb7c8
+    name: sockshop
+    urls:
+    - https://github.com/darrylweaver/sockshop/releases/download/sockshop-0.3.8/sockshop-0.3.8.tgz
+    version: 0.3.8
+  - apiVersion: v1
     created: "2022-05-11T00:28:53.541034747Z"
     dependencies:
     - name: nginx-ingress
@@ -61,4 +73,4 @@ entries:
     urls:
     - https://github.com/darrylweaver/sockshop/releases/download/sockshop-0.3.3/sockshop-0.3.3.tgz
     version: 0.3.3
-generated: "2022-05-11T00:28:53.541058047Z"
+generated: "2022-05-12T13:37:25.937257044Z"
